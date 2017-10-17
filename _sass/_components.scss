@@ -1,0 +1,46 @@
+
+ol.breadcrumb {
+    display: inline-block;
+    list-style: none;
+    border: 0px;
+    padding-left:0px;
+    background-color:#fff;
+    li {
+        font-size: 1.2rem;
+    }
+    a {
+        color: $tertiary-font;
+        // &:hover {
+        //     color: darken($primary-color, 20%);
+        // }
+    }
+    > li {
+        display: inline-block;
+        & + li:before {
+            padding: 0 5px;
+        }
+    }
+    >.active a {
+        color: $secondary-font;
+    }
+    >li+li:before {
+        color: $tertiary-font;
+        content: "/";
+    }
+}
+.banner {
+    background-color: $secondary-color;
+    padding: 2% 0;
+    &.banner--text {}
+    &.banner--labgroup_banner {
+        background-image: url("/media/banners/labgroup_banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 270px;
+    }
+    // &.banner--afghanistan_banner {
+    //     background-image: url("/media/banners/afghanistan_banner.jpg");
+    //     @extend .banner--china_banner;
+    // }
+
+}

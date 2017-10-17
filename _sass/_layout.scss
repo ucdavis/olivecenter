@@ -1,0 +1,26 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+  position:relative;
+  min-height: 100%;
+  height:inherit;
+}
+body {
+  padding:0px;
+  margin:0px;
+  margin-bottom:180px;
+}
+img {
+  max-width: 100%;
+}
+
+.flex-apart {
+  display:flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}

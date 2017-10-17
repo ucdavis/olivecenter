@@ -1,0 +1,29 @@
+---
+layout: default
+---
+Page layout
+{% if page.image-banner %}
+<div class="banner banner--{{ page.image-banner }}">
+
+
+</div>
+{% endif %}
+<div class="container">
+  <div class="flex-apart">
+    <div class="flex-col">
+        <ol class="breadcrumb">
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a href="/about/where-we-work/">Countries</a></li>
+            <li class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
+        </ol>
+    </div>
+    <div class="flex-col">
+        <form class="small_search" action="/search" method="GET">
+            <input type="text" name="q" autocomplete="off" required>
+        </form>
+    </div>
+</div>
+  <h1>{{ page.title }}</h1>
+  <p class="lead">{{ page.description }}</p>
+  {{ content }}
+</div>

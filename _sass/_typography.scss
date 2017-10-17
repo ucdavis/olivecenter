@@ -1,0 +1,36 @@
+// baseline typography
+html {
+    font-size: 10px;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    line-height: 1.5;
+    font-family: $sans-reg;
+    @include breakpoint(tablet) {
+        font-size: 8px;
+    }
+    @include breakpoint(mobile) {
+        font-size: 7px;
+    }
+}
+ul {
+  font-family: $sans-reg;
+  li {
+    font-size:1.6rem;
+  }
+}
+p {
+  font-size:1.6rem;
+  font-family: $sans-reg;
+  &.lead {
+    font-size:1.8rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary-color;
+    font-family:$sans-bold;
+}
