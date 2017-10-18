@@ -1,15 +1,16 @@
 ---
 layout: default
 ---
-Page layout
+<div class="flex-display banner banner--{{ page.image-banner }}">
 
-<div class="banner banner--{{ page.image-banner }}">
-  <h1>{{ page.title }}</h1>
+  <div class="banner--text container">
+    <h1>{{ page.title }}</h1>
+  </div>
 
 </div>
 
 <div class="container">
-  <div class="flex-apart">
+  <div class="flex-apart separator">
     <div class="flex-col">
         <ol class="breadcrumb">
             <li><a href="{{ site.baseurl }}/">Home</a></li>
@@ -24,6 +25,6 @@ Page layout
     </div>
 </div>
 
-  
+
   {{ content }}
 </div>

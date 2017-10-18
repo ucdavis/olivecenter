@@ -2,7 +2,7 @@
 layout: null
 ---
 {
-  {% for item in site.contents %}
+  {% for post in site.posts %}
 
     "{{ post.url | slugify }}": {
       "title": "{{ post.title | xml_escape }}",

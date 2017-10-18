@@ -8,6 +8,8 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    autoprefixer-rails (7.1.5)
+      execjs
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -98,6 +100,9 @@ GEM
       mini_portile2 (~> 2.0.0.rc2)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
+    octopress-autoprefixer (2.0.1)
+      autoprefixer-rails
+      jekyll (~> 3.0)
     public_suffix (1.5.3)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -122,6 +127,7 @@ DEPENDENCIES
   github-pages
   jekyll-seo-tag
   jekyll-sitemap
+  octopress-autoprefixer
 
 BUNDLED WITH
-   1.13.7
+   1.16.0.pre.3

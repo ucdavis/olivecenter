@@ -57,26 +57,47 @@ ol.breadcrumb {
 .banner {
     background-color: $secondary-color;
     padding: 2% 0;
-    &.banner--text {}
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 270px;
+    display:flex;
+    align-items: flex-end;
+    & .banner--text {
+        margin-bottom:-20px;
+      h1 {
+        color:#fff;
+        display:inline;
+        border-left:8px solid $tertiary-color;
+        font-size:3rem;
+        padding:6px 18px 6px 14px;
+        margin-left:-24px;
+
+        background-color: transparentize($primary-color,.05)
+      }
+    }
     &.banner--labgroup_banner {
         background-image: url("/media/banners/labgroup_banner.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 270px;
     }
-    // &.banner--afghanistan_banner {
-    //     background-image: url("/media/banners/afghanistan_banner.jpg");
-    //     @extend .banner--china_banner;
-    // }
+    &.banner--donate_banner {
+        background-image: url("/media/banners/donate_banner.jpg");
+    }
 
 }
 .marketing-highlight {
-  .mh-content {
-    background-color:$bg-color;
+  .mh-title {
+    background-color:$primary-color;
     h2 {
-      display:block;
-      background-color:$primary-color;
       color:#fff;
+      font-size:2.6rem;
+      margin:0px;
+      padding:16px 24px;
     }
   }
+  .mh-content {
+    background-color:$bg-color;
+    padding:20px 24px;
+  }
+}
+.separator {
+  margin:20px 0px;
 }
