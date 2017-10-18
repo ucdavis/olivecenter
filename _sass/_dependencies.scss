@@ -30,7 +30,7 @@ $secondary-font: rgba(67,67,67,.7); //
 $tertiary-font: rgba(67,67,67,.48); //
 
 
-$bg-color: #F8F8F8; // background
+$bg-color: transparentize($primary-color, .88); // background
 $borders: #C8C7CC; // border color
 
 $nav-active: #fff;

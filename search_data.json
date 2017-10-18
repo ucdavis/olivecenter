@@ -2,7 +2,7 @@
 layout: null
 ---
 {
-  {% for post in site.posts %}
+  {% for item in site.contents %}
 
     "{{ post.url | slugify }}": {
       "title": "{{ post.title | xml_escape }}",
@@ -15,6 +15,3 @@ layout: null
     {% unless forloop.last %},{% endunless %}
   {% endfor %}
 }
-
-
-

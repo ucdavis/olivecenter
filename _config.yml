@@ -25,3 +25,7 @@ gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+
+collections:
+  contents:
+    output: true

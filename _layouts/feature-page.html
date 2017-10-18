@@ -1,6 +1,12 @@
 ---
 layout: default
 ---
+Page layout
+
+<div class="banner banner--{{ page.image-banner }}">
+  <h1>{{ page.title }}</h1>
+
+</div>
 
 <div class="container">
   <div class="flex-apart">
@@ -17,7 +23,7 @@ layout: default
         </form>
     </div>
 </div>
-  <h1>{{ page.title }}</h1>
-  <p class="lead">{{ page.description }}</p>
+
+  
   {{ content }}
 </div>
