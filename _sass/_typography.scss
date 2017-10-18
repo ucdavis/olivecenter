@@ -21,8 +21,13 @@ ul {
 p {
   font-size:1.6rem;
   font-family: $sans-reg;
+  margin:1.2rem 0rem;
   &.lead {
     font-size:1.8rem;
+    margin-top:0px;
+  }
+  footer & {
+    color:$tertiary-font;
   }
 }
 h1,
@@ -33,4 +38,5 @@ h5,
 h6 {
     color: $primary-color;
     font-family:$sans-bold;
+    margin: 1.6rem 0rem 1rem 0rem;
 }

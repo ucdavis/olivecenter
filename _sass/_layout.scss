@@ -24,3 +24,12 @@ img {
   justify-content: space-between;
   vertical-align: middle;
 }
+footer {
+  .footer-divider {
+    margin-bottom:-40px;
+    text-align:center;
+    img {
+      padding:20px;
+    }
+  }
+}

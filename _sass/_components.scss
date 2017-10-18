@@ -63,7 +63,6 @@ ol.breadcrumb {
     display:flex;
     align-items: flex-end;
     & .banner--text {
-        margin-bottom:-20px;
       h1 {
         color:#fff;
         display:inline;
@@ -100,4 +99,11 @@ ol.breadcrumb {
 }
 .separator {
   margin:20px 0px;
+}
+
+.t-right {
+  text-align:right;
+}
+.t-center {
+  text-align: center;
 }
