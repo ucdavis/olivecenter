@@ -21,7 +21,7 @@ ul {
 p {
   font-size:1.6rem;
   font-family: $sans-reg;
-  margin:1.2rem 0rem;
+  // margin:1.2rem 0rem;
   &.lead {
     font-size:1.8rem;
     margin-top:0px;
@@ -38,5 +38,10 @@ h5,
 h6 {
     color: $primary-color;
     font-family:$sans-bold;
-    margin: 1.6rem 0rem 1rem 0rem;
+    // margin: 1.6rem 0rem 1rem 0rem;
+}
+h2,
+h3,
+h4 {
+  margin-top:1.5rem;
 }
