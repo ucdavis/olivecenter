@@ -7,7 +7,7 @@ layout: default
     <div class="flex-col">
         <ol class="breadcrumb">
             <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="/about/where-we-work/">Countries</a></li>
+          {% if page.breadcrumb %}{{ page.breadcrumb }}{% endif %} 
             <li class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
         </ol>
     </div>

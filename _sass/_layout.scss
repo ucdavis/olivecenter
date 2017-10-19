@@ -13,7 +13,7 @@ html {
 body {
   padding:0px;
   margin:0px;
-  margin: 0 0 160px;
+  margin-bottom:200px;
 }
 img {
   max-width: 100%;
@@ -28,10 +28,10 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 120px;
   display: block;
+  height:200px;
   .footer-divider {
-    margin-bottom:-40px;
+    margin-bottom:-60px;
     text-align:center;
     img {
       padding:20px;
