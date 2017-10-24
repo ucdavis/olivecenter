@@ -107,3 +107,16 @@ ol.breadcrumb {
 .t-center {
   text-align: center;
 }
+//database
+table.dataTable tr.odd td.sorting_1 {
+	background-color: #c0c482;
+}
+table.dataTable tr.even td.sorting_1 {
+	background-color: #edeadb;
+}
+table.dataTable tr.odd td {
+	background-color: #d0d3a9;
+}
+table.dataTable tr.even td {
+	background-color: #fcf9e9;
+}
