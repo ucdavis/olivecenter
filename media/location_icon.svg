@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="29px" viewBox="0 0 20 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>location_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <g id="Event_full" transform="translate(-887.000000, -719.000000)" fill="#2D2D2D">
+            <g id="event-details" transform="translate(886.000000, 458.000000)">
+                <g id="location" transform="translate(1.000000, 261.000000)">
+                    <g id="location_icon">
+                        <path d="M10,0 C4.47142857,0 0,4.5385 0,10.15 C0,17.7625 10,29 10,29 C10,29 20,17.7625 20,10.15 C20,4.5385 15.5285714,0 10,0 L10,0 Z M10,13.775 C8.02857143,13.775 6.42857143,12.151 6.42857143,10.15 C6.42857143,8.149 8.02857143,6.525 10,6.525 C11.9714286,6.525 13.5714286,8.149 13.5714286,10.15 C13.5714286,12.151 11.9714286,13.775 10,13.775 L10,13.775 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

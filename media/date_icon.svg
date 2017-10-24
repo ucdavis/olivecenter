@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="27px" viewBox="0 0 24 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>date_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Current" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.9">
+        <g id="Event_full" transform="translate(-886.000000, -458.000000)" fill="#2D2D2D">
+            <g id="event-details" transform="translate(886.000000, 458.000000)">
+                <g id="date">
+                    <g id="date_icon">
+                        <path d="M21.3333333,3 L20,3 L20,0.333333333 L17.3333333,0.333333333 L17.3333333,3 L6.66666667,3 L6.66666667,0.333333333 L4,0.333333333 L4,3 L2.66666667,3 C1.18666667,3 0.0133333333,4.2 0.0133333333,5.66666667 L0,24.3333333 C0,25.8 1.18666667,27 2.66666667,27 L21.3333333,27 C22.8,27 24,25.8 24,24.3333333 L24,5.66666667 C24,4.2 22.8,3 21.3333333,3 L21.3333333,3 Z M21.3333333,24.3333333 L2.66666667,24.3333333 L2.66666667,9.66666667 L21.3333333,9.66666667 L21.3333333,24.3333333 L21.3333333,24.3333333 Z M5.33333333,12.3333333 L12,12.3333333 L12,19 L5.33333333,19 L5.33333333,12.3333333 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
