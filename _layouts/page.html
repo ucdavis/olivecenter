@@ -7,14 +7,12 @@ layout: default
     <div class="flex-col">
         <ol class="breadcrumb">
             <li><a href="{{ site.baseurl }}/">Home</a></li>
-          {% if page.breadcrumb %}{{ page.breadcrumb }}{% endif %} 
+          {% if page.breadcrumb %}{{ page.breadcrumb }}{% endif %}
             <li class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
         </ol>
     </div>
     <div class="flex-col">
-        <form class="small_search" action="/search" method="GET">
-            <input type="text" name="q" autocomplete="off" required>
-        </form>
+        
     </div>
 </div>
   <h1>{{ page.title }}</h1>

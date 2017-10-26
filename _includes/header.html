@@ -1,5 +1,20 @@
 <header>
-Header
-        	{% include navigation.html %}
+<div class="container">
+  <div class="row">
+    <div class="col-1">
+      <img src="/media/oliveprint.svg" alt="olive outline">
+    </div>
+    <div class="col-9">
+      <img src="/media/site_logo.svg" alt="UC Davis Olive Center">
+      	{% include navigation.html %}
+    </div>
+    <div class="col-2">
+      <form class="small_search" action="/search" method="GET">
+          <input type="text" name="q" autocomplete="off" required>
+      </form>
+    </div>
+  </div>
+</div>
+
 
 </header>

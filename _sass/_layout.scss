@@ -18,7 +18,10 @@ body {
 img {
   max-width: 100%;
 }
-
+header {
+  background-color: $primary-color;
+  padding-top:16px;
+}
 .flex-apart {
   display:flex;
   justify-content: space-between;
