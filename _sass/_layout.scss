@@ -22,6 +22,12 @@ header {
   background-color: $primary-color;
   padding-top:16px;
 }
+.col-sm-8 {
+  padding-right:32px;
+}
+.col-sm-4 {
+  padding-left:32px;
+}
 .flex-apart {
   display:flex;
   justify-content: space-between;
