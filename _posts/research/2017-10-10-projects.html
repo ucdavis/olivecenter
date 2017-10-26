@@ -7,7 +7,7 @@ breadcrumb: <li><a href="/research">Research</a></li>
 ---
 
 <div class="row">
-  <div class="col-sm-8">
+  <div class="col-{{ site.break }}-8">
     <p class="lead">{{ page.description }}</p>
     <div id="accordion" role="tablist">
       <div class="card">
@@ -233,7 +233,7 @@ breadcrumb: <li><a href="/research">Research</a></li>
       </div>
     </div>
   </div>
-  <div class="col-sm-4">
+  <div class="col-{{ site.break }}-4">
     {% include research_block.html %}
   </div>
 </div>

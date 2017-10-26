@@ -13,7 +13,27 @@ html {
 body {
   padding:0px;
   margin:0px;
-  margin-bottom:200px;
+  margin-bottom:180px;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 620px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 830px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 img {
   max-width: 100%;
@@ -22,10 +42,15 @@ header {
   background-color: $primary-color;
   padding-top:16px;
 }
-.col-sm-8 {
-  padding-right:32px;
+.col-md-8 {
+  @include breakpoint(rufus) {
+    padding-right:32px;
+    border-right:1px solid $bg-color;
+    padding-bottom:40px;
+    min-height:582px;
+  }
 }
-.col-sm-4 {
+.col-md-4 {
   padding-left:32px;
 }
 .flex-apart {
@@ -38,10 +63,12 @@ footer {
   bottom: 0;
   width: 100%;
   display: block;
-  height:160px;
+  height:180px;
+  border-top:1px solid $bg-color;
   .footer-divider {
     margin-bottom:-100px;
     text-align:center;
+    margin-top:10px;
     img {
       padding:20px;
     }

@@ -13,6 +13,8 @@ repo: "https://github.com/ucdavis/olivecenter"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://olivecenter.ucdavis.edu" # the base hostname & protocol for your site
 
+break: md
+
 permalink: pretty
 
 paginate: 3
