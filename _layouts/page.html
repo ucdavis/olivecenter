@@ -2,19 +2,24 @@
 layout: default
 ---
 
-<div class="container">
-  <div class="flex-apart separator">
-    <div class="flex-col">
-        <ol class="breadcrumb">
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-          {% if page.breadcrumb %}{{ page.breadcrumb }}{% endif %}
-            <li class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
-        </ol>
-    </div>
-    <div class="flex-col">
-        
-    </div>
+  {% if page.image-banner %}
+<div class="flex-display banner banner--{{ page.image-banner }}">
+
+  <!-- <div class="banner--text container">
+    <h1>{{ page.title }}</h1>
+  </div> -->
+
 </div>
-  <h1>{{ page.title }}</h1>
+{% endif %}
+<div class="bot-border">
+  <div class="container">
+      <ol class="breadcrumb">
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+        {% if page.breadcrumb %}{{ page.breadcrumb }}{% endif %}
+          <li class="active"><a href="{{ page.url }}">{{ page.title }}</a></li>
+      </ol>
+  </div>
+</div>
+<div class="container">
   {{ content }}
 </div>

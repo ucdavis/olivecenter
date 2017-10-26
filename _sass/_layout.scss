@@ -43,6 +43,7 @@ header {
   padding-top:16px;
 }
 .col-md-8 {
+  padding-top:24px;
   @include breakpoint(rufus) {
     padding-right:32px;
     border-right:1px solid $bg-color;
@@ -51,7 +52,11 @@ header {
   }
 }
 .col-md-4 {
-  padding-left:32px;
+  padding-top:24px;
+  @include breakpoint(rufus) {
+    padding-left:32px;
+  }
+
 }
 .flex-apart {
   display:flex;

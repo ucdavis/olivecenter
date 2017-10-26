@@ -117,6 +117,9 @@ ol.breadcrumb {
 .card-nobrdr {
   border:0px solid #fff;
 }
+.bot-border {
+  border-bottom: 1px solid $bg-color;
+}
 //database
 table.dataTable tr.odd td.sorting_1 {
 	background-color: #c0c482;
