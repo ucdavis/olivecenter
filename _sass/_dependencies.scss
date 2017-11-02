@@ -78,4 +78,9 @@ $shingle-brown: #4f2c1d;
             @content ;
         }
     }
+    @if $point==smbreak {
+        @media (min-width: 576px) {
+            @content ;
+        }
+    }
 }
