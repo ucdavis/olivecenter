@@ -107,7 +107,15 @@ ol.breadcrumb {
 .separator {
   margin:20px 0px 10px 0px;
 }
-
+.m-r {
+  margin-right:16px;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flexer {
+  display:flex;
+}
 .t-right {
   text-align:right;
 }

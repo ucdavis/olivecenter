@@ -1,14 +1,17 @@
 <header>
 <div class="container">
-  <div class="row">
-    <div class="col-1">
-      <img src="/media/oliveprint.svg" alt="olive outline">
+  <div class="row flex-between">
+    <div class="custom-col flexer">
+      <div class="brand-wrapper m-r">
+          <img class="img-fluid" src="/media/oliveprint.svg" alt="olive outline">
+      </div>
+      <div class="title-nav-wrapper">
+        <img class="img-fluid" src="/media/site_logo.svg" alt="UC Davis Olive Center">
+          {% include navigation.html %}
+      </div>
+
     </div>
-    <div class="col-9">
-      <img src="/media/site_logo.svg" alt="UC Davis Olive Center">
-      	{% include navigation.html %}
-    </div>
-    <div class="col-2">
+    <div class="custom-col">
       <form class="small_search" action="/search" method="GET">
           <input type="text" name="q" autocomplete="off" required>
       </form>
