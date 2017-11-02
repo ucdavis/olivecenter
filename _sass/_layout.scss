@@ -45,10 +45,10 @@ header {
   max-width: 100%;
 }
 .col-md-8 {
-  padding-top:24px;
+  padding-top:16px;
   @include breakpoint(rufus) {
     padding-right:32px;
-    border-right:1px solid $bg-color;
+    // border-right:1px solid $bg-color;
     padding-bottom:40px;
     min-height:582px;
   }

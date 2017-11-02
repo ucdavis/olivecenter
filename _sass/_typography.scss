@@ -4,7 +4,7 @@ html {
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
     line-height: 1.5;
-    // 
+    //
     // @include breakpoint(tablet) {
     //     font-size: 8px;
     // }
@@ -16,11 +16,19 @@ body {
     font-family: $sans-reg;
 }
 ul {
+  &.no-list-style {
+    list-style-type: none;
+    padding-left:0px;
+    li {
+      margin:4px 0px;
+    }
+  }
   font-family: $sans-reg;
   li {
     font-size:1.6rem;
   }
 }
+
 p {
   font-size:1.6rem;
   font-family: $sans-reg;
