@@ -10,7 +10,7 @@
                 <g id="price" transform="translate(2.000000, 448.000000)">
                     <g id="ic_payment">
                         <g id="Icon-24px">
-                            <path d="M18,0 L2,0 C0.89,0 0.01,0.89 0.01,2 L0,14 C0,15.11 0.89,16 2,16 L18,16 C19.11,16 20,15.11 20,14 L20,2 C20,0.89 19.11,0 18,0 L18,0 Z" id="Shape" fill="#424242"></path>
+                            <path d="M18,0 L2,0 C0.89,0 0.01,0.89 0.01,2 L0,14 C0,15.11 0.89,16 2,16 L18,16 C19.11,16 20,15.11 20,14 L20,2 C20,0.89 19.11,0 18,0 L18,0 Z" id="Shape" fill="#848B14"></path>
                             <rect id="Rectangle-8" fill="#FFFFFF" x="2" y="4" width="16" height="4"></rect>
                         </g>
                     </g>
