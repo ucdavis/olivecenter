@@ -1,4 +1,6 @@
-
+img.img-fluid {
+  width:100%;
+}
 .btn {
   white-space: nowrap;
   display: inline-block;
@@ -79,12 +81,12 @@ ol.breadcrumb {
       h1 {
         color:#fff;
         display:inline;
-        border-left:8px solid $tertiary-color;
+        border-left:8px solid #CCD4E0;
         font-size:2.8rem;
         padding:6px 18px 6px 14px;
         margin-left:-24px;
 
-        background-color: transparentize($primary-color,.05)
+        background-color: $primary-color;
       }
     }
     &.banner--labgroup_banner {

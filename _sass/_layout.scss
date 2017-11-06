@@ -15,26 +15,30 @@ body {
   margin:0px;
   margin-bottom:180px;
 }
-// @media (min-width: 576px) {
-//   .container {
-//     max-width: 720px;
-//   }
-// }
-// @media (min-width: 768px) {
-//   .container {
-//     max-width: 830px;
-//   }
-// }
-// @media (min-width: 992px) {
-//   .container {
-//     max-width: 960px;
-//   }
-// }
-// @media (min-width: 1200px) {
-//   .container {
-//     max-width: 1140px;
-//   }
-// }
+@media (min-width: 576px) {
+  .container {
+    max-width: inherit;
+    width:98%;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: inherit;
+    width:95%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: inherit;
+    width:90%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+    width:88%;
+  }
+}
 header {
   background-color: $primary-color;
   padding-top:16px;
@@ -89,13 +93,22 @@ footer {
   width: 100%;
   display: block;
   height:180px;
-  border-top:1px solid $bg-color;
+  .foot-border {
+      border-top:1px solid $tertiary-color;
+      padding-top:20px;
+  }
   .footer-divider {
-    margin-bottom:-100px;
     text-align:center;
-    margin-top:10px;
     img {
-      padding:20px;
+    z-index: 99;
+    border-right: 20px solid #fff;
+    border-left: 20px solid #fff;
+    background-color: #fff;
+    position: relative;
+    bottom:-55px;
+    @include breakpoint (mdbreak) {
+      display:none;
+    }
     }
   }
     @include breakpoint (smbreak) {

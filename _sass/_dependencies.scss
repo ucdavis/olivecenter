@@ -24,7 +24,7 @@ $sans-reg:      "proxima-nova-r",serif;
 
 $primary-color:     #004987;
 $secondary-color:   #D2AC3A;
-$tertiary-color:    #F8EECC;
+$tertiary-color:    transparentize($secondary-color, .80);
 
 $gold:              #D2AC3A;
 $blue:              #004987;
@@ -80,6 +80,11 @@ $shingle-brown: #4f2c1d;
     }
     @if $point==smbreak {
         @media (min-width: 576px) {
+            @content ;
+        }
+    }
+    @if $point==mdbreak {
+        @media (max-width: 767px) {
             @content ;
         }
     }
