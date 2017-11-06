@@ -61,6 +61,23 @@ header {
   }
 
 }
+.event-sidebar {
+  padding-top:26px;
+  p {
+    color:$secondary-font;
+  }
+}
+.event-collection {
+  .lead {
+    margin-bottom:24px;
+  }
+  .media {
+    margin-bottom:40px;
+    &:hover {
+      background-color:$bg-color;
+    }
+  }
+}
 .flex-apart {
   display:flex;
   justify-content: space-between;

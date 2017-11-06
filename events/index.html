@@ -12,18 +12,26 @@ description: Events at the olive center
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-8 event-collection">
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.description }}</p>
       {% for post in site.categories.events %}
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          {% if post.imagethumb %}<img src="{{ post.image }}-thumb.jpg">{% endif %}
-          <h2>
-            {{ post.title }}
-          </h2>
-          <h5 class="event-date">Published {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</h5>
-          <p class="event-description">{{ post.description }}</p>
 
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <div class="media">
+          {% if post.imagethumb %}
+          <img src="/media/{{ post.imagethumb }}">
+          {% endif %}
+          <div class="media-body">
+            <h2>
+              {{ post.title }}
+            </h2>
+            <h5 class="event-date">Published {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</h5>
+            <p class="event-description">{{ post.description }}</p>
+          </div>
+
+
+</div>
 
       </a>
       {% endfor %}
