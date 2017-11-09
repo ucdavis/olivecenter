@@ -40,9 +40,29 @@ body {
   }
 }
 header {
-  background-color: $primary-color;
+  // background-color: $primary-color;
   padding-top:16px;
   padding-bottom:4px;
+  h1 {
+    color:$primary-color;
+  }
+  p {
+    font-style: italic;
+    color:$primary-color;
+  }
+}
+.head_bleed {
+  background: #1e3a5b;
+    background: -moz-linear-gradient(left,#1e3a5b 0%,#1e3a5b 44%,#dbbc5b 57%,#dbbc5b 100%);
+    background: -webkit-linear-gradient(left,#1e3a5b 0%,#1e3a5b 44%,#dbbc5b 57%,#dbbc5b 100%);
+    background: linear-gradient(to right,#1e3a5b 0%,#1e3a5b 44%,#dbbc5b 57%,#dbbc5b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradient-one',endColorstr='$gradient-two',GradientType=1);
+}
+.head_divider {
+    background: url(/media/gunrock_banner_final.svg) center top/cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .custom-col {
   flex-basis: 0;

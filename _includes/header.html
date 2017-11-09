@@ -1,25 +1,20 @@
 <header>
-<div class="container">
-  <div class="row flex-between">
-    <div class="flexer">
-      <div class="brand-wrapper m-r">
-      
-            <img class="img-fluid" src="/media/oliveprint.svg" alt="olive outline">
-
+  <div class="container">
+    <div class="row flex-between">
+      <div class="col">
+        <h1>Olive Center</h1>
+        <p><i>At the Robert Mondavi Center</i></p>
       </div>
-      <div class="title-nav-wrapper">
-        <img style="width:60%;" class="img-fluid" src="/media/site_logo.svg" alt="UC Davis Olive Center">
-          {% include navigation.html %}
-      </div>
-
-    </div>
-    <div class="col-3 align-center m-b">
-      <form class="small_search" action="/search" method="GET">
+      <div class="col-3 align-center m-b">
+        <form class="small_search" action="/search" method="GET">
           <input type="text" name="q" autocomplete="off" required>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
-</div>
+<div class="container"></div>
 
 
 </header>
+<div class="nav_bleed">
+  {% include navigation.html %}
+</div>
