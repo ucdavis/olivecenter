@@ -44,11 +44,18 @@ header {
   padding-top:16px;
   padding-bottom:4px;
   h1 {
-    color:$primary-color;
+    img {
+      width:21%;
+      padding-bottom:6px;
+    }
+    color:#002855;
+    font-size:3.6rem;
+    margin-bottom:0px;
   }
   p {
     font-style: italic;
     color:$primary-color;
+    font-size:2.2rem;
   }
 }
 .head_bleed {
