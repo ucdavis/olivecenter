@@ -41,7 +41,7 @@ body {
 }
 header {
   // background-color: $primary-color;
-  padding-top:16px;
+  padding-top:24px;
   padding-bottom:4px;
   h1 {
     img {
@@ -56,6 +56,30 @@ header {
     font-style: italic;
     color:$primary-color;
     font-size:2.2rem;
+  }
+}
+header.header-home {
+  h1 {
+    color:#fff;
+    font-size:3rem;
+  }
+  p {
+    color:#fff;
+    margin-bottom:-8px;
+  }
+  p a {
+    color:#fff;
+    font-style:normal;
+    font-size:1.8rem;
+    font-weight:600;
+    &:hover {
+      color:$secondary-color;
+    }
+  }
+  background: url(/media/home-banner.jpg) center top/cover no-repeat;
+  .banner-cta {
+    margin-top:11%;
+    margin-bottom:4%;
   }
 }
 .head_bleed {

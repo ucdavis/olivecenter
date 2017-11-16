@@ -164,3 +164,9 @@ table.dataTable tr.odd td {
 table.dataTable tr.even td {
 	background-color: #fcf9e9;
 }
+.gold {
+  color:$secondary-color;
+}
+.border-top {
+  border-top:1px solid rgba(255,255,255,0.85)
+}
