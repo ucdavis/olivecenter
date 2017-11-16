@@ -45,7 +45,6 @@ header {
   padding-bottom:4px;
   h1 {
     img {
-      width:21%;
       padding-bottom:6px;
     }
     color:#002855;
@@ -100,6 +99,18 @@ header.header-home {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.main-cta {
+  p {
+    font-size:1.8rem;
+  }
+  .col-md-6 {
+    padding:80px 0px;
+  }
+}
+.cta-descrip {
+  margin:24px 0px;
+
 }
 .custom-col {
   flex-basis: 0;

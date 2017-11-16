@@ -24,6 +24,12 @@ form.small_search {
         background-position:10px center;
         margin-top:6px;
         box-sizing:inherit !important;
+        .header-home & {
+          background-color: rgba(255,255,255,.15);
+          color:#fff;
+          border:1px solid #fff;
+          background-image:url(/media/search_form_home.svg);
+        }
     }
 }
 form.search_form {

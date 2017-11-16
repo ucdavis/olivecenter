@@ -15,6 +15,12 @@ html {
 body {
     font-family: $sans-reg;
 }
+a {
+  color:$a-link;
+  &:hover {
+    color:$primary-color;
+  }
+}
 a:hover {
   text-decoration: none;
 }
@@ -66,4 +72,11 @@ h4 {
 }
 table {
   font-size:1.6rem;
+}
+.h-wrapper {
+  width:65%;
+  @include breakpoint(tablet) {
+    width:100%;
+  }
+  border-bottom:4px solid $accent;
 }

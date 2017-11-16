@@ -170,3 +170,12 @@ table.dataTable tr.even td {
 .border-top {
   border-top:1px solid rgba(255,255,255,0.85)
 }
+.border-blue-top {
+  border-top:1px solid $accent;
+}
+.border-blue-bottom {
+  border-bottom:1px solid $accent;
+}
+.border-blue-right {
+  border-right:1px solid $accent;
+}
