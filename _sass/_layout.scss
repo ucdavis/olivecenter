@@ -81,6 +81,12 @@ header.header-home {
     margin-top:11%;
     margin-bottom:4%;
   }
+  .banner-contents {
+    width:40%;
+    @include breakpoint(tablet) {
+      width:100%;
+    }
+  }
 }
 .head_bleed {
   background: #1e3a5b;
