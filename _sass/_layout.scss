@@ -101,12 +101,29 @@ header.header-home {
     align-items: center;
 }
 .main-cta {
+  border-bottom:1px solid $accent;
+  border-top:1px solid $accent;
+  margin:32px 0px 56px 0px;
+  .left-col {
+    border-right:1px solid $accent;
+    @include breakpoint(tablet) {
+      border-right:none;
+      border-bottom:1px solid $accent;
+    }
+  }
+  .event-left {
+    margin-left:48px;
+    @include breakpoint(tablet) {
+      margin-left:0px;
+    }
+  }
   p {
     font-size:1.8rem;
   }
   .col-md-6 {
     padding:80px 0px;
   }
+
 }
 .cta-descrip {
   margin:24px 0px;

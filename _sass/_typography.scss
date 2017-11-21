@@ -74,9 +74,10 @@ table {
   font-size:1.6rem;
 }
 .h-wrapper {
-  width:65%;
-  @include breakpoint(tablet) {
-    width:100%;
-  }
+  display:inline-block;
+  // @include breakpoint(tablet) {
+  //   width:100%;
+  // }
   border-bottom:4px solid $accent;
+  padding-right:24px;
 }
