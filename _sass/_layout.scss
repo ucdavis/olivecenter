@@ -100,10 +100,13 @@ header.header-home {
     justify-content: space-between;
     align-items: center;
 }
+.annoucnements p {
+  margin-bottom:0px;
+}
 .main-cta {
   border-bottom:1px solid $accent;
   border-top:1px solid $accent;
-  margin:32px 0px 56px 0px;
+  margin:20px 0px 56px 0px;
   .left-col {
     border-right:1px solid $accent;
     @include breakpoint(tablet) {
@@ -182,6 +185,9 @@ footer {
       border-top:1px solid $tertiary-color;
       padding-top:20px;
   }
+  // p a {
+  //   color:$tertiary-color;
+  // }
   .footer-divider {
     text-align:center;
     img {
