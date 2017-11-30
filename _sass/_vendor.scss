@@ -1,0 +1,16 @@
+#accordion {
+  .card {
+    margin-bottom:8px;
+    border-color:$accent;
+    .card-header {
+      border-bottom:none;
+      background-color:$accent;
+      h3 {
+        margin-top:8px;
+        a {
+          color:$primary-color;
+        }
+      }
+    }
+  }
+}

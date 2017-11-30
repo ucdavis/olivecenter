@@ -26,7 +26,7 @@ description: Events at the olive center
             <h2>
               {{ post.title }}
             </h2>
-            <h5 class="event-date">Published {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</h5>
+            <h5 class="event-date">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</h5>
             <p class="event-description">{{ post.description }}</p>
           </div>
 
