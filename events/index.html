@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Events at the UC Davis Olive Center
-description: Events at the olive center
+
 ---
 <div class="container">
     <ol class="breadcrumb">
@@ -26,7 +26,7 @@ description: Events at the olive center
             <h2>
               {{ post.title }}
             </h2>
-            <h5 class="event-date">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</h5>
+            <h5 class="event-date">{{ post.date-display }}</h5>
             <p class="event-description">{{ post.description }}</p>
           </div>
 
@@ -37,7 +37,13 @@ description: Events at the olive center
       {% endfor %}
     </div>
     <div class="col-md-4">
-      b
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">In this section</h4>
+          <p class="card-text">The UC Davis Olive center hosts a number of events throughout the year, be sure to check them out.</p>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
