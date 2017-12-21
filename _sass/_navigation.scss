@@ -1,6 +1,10 @@
 .header-home {
 
 }
+.navbar {
+  padding-top:0px;
+  padding-bottom:0px;
+}
 nav.navbar {
   margin-left: -22px;
 
@@ -8,7 +12,10 @@ nav.navbar {
     color:rgba(255,255,255,0.98);
     font-size:1.8rem;
     font-family: $sans-bold;
-    padding:0.5rem 1rem !important;
+    padding:1rem 1rem !important;
+    &:hover {
+      background-color: rgba(255,255,255,.15)
+    }
   }
 }
 .dropdown-toggle::after {
@@ -28,4 +35,10 @@ nav.navbar {
 }
 .dropdown-item {
   color:$primary-font;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: $accent;
+}
+.dropdown-menu {
+  top:96%;
 }
