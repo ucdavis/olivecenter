@@ -74,6 +74,11 @@ h4 {
 table {
   font-size:1.6rem;
 }
+.event-date {
+  font-size:1.2rem;
+  text-transform: uppercase;
+  color:$secondary-font;
+}
 .h-wrapper {
   display:inline-block;
   // @include breakpoint(tablet) {
