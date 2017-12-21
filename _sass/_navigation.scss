@@ -13,10 +13,13 @@ nav.navbar {
     font-size:1.8rem;
     font-family: $sans-bold;
     padding:1rem 1rem !important;
-    &:hover {
-      background-color: rgba(255,255,255,.15)
-    }
   }
+}
+.head_bleed a.nav-link:hover {
+  background-color: rgba(255,255,255,.15)
+}
+.header-home a.nav-link:hover {
+  color: $golden-lupine;
 }
 .dropdown-toggle::after {
     display: inline-block;

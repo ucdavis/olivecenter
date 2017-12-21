@@ -198,19 +198,19 @@ ol.breadcrumb {
 //database
 
 table.dataTable tr.odd td.sorting_1 {
-  background-color: #c0c482;
+  background-color: $accent;
 }
 
 table.dataTable tr.even td.sorting_1 {
-  background-color: #edeadb;
+  background-color: #fefefe;
 }
 
 table.dataTable tr.odd td {
-  background-color: #d0d3a9;
+  background-color: darken($accent,5%);
 }
 
 table.dataTable tr.even td {
-  background-color: #fcf9e9;
+  background-color: darken(#fefefe,5%);
 }
 
 .gold {
