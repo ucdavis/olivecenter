@@ -11,7 +11,15 @@ img.img-fluid {
   width:300px;
   &:hover {
     color:#fff;
-    opacity: .95;
+    opacity: .85;
+  }
+}
+.btn-borderonly {
+  border:1px solid rgba(0, 40, 85, 0.8);
+  padding:1rem 2rem;
+  display:inline-block;
+  &:hover {
+    background-color:$accent;
   }
 }
 .btn {
