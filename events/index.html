@@ -12,15 +12,12 @@ title: Events at the UC Davis Olive Center
 </div>
 <div class="container">
   <div class="row">
-    {% if length == 0 %}
 
-        <p>There are no active events</p>
-      {% endif %}
     <div class="col-md-8 event-collection">
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.description }}</p>
       {% for post in site.categories.events %}
-
+      <p>There are currently no active events</p>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <div class="media">
           {% if post.imagethumb %}
