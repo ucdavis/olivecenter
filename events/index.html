@@ -17,8 +17,7 @@ title: Events at the UC Davis Olive Center
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.description }}</p>
       {% for post in site.categories.events %}
-      <p>There are currently no active events</p>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <a class="post-link" target="_blank" href="{{ post.hyperlink }}">
         <div class="media">
           {% if post.imagethumb %}
           <img src="/media/{{ post.imagethumb }}">
