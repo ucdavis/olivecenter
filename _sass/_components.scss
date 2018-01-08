@@ -24,9 +24,8 @@ p a.action-btn {
   border:1px solid rgba(0, 40, 85, 0.8);
   padding:1rem 2rem;
   display:inline-block;
-  a {
     color:transparentize($primary-color, .2);
-  }
+    text-decoration: none !important;
   &:hover {
     background-color:$accent;
   }
