@@ -21,6 +21,10 @@ a {
     color:$primary-color;
   }
 }
+p a {
+  font-weight: 700;
+  text-decoration: underline
+}
 a:hover {
   text-decoration: none;
 }
@@ -48,7 +52,7 @@ p {
     margin-top:0px;
   }
   footer & {
-    color:$tertiary-font;
+    color:$primary-font;
     font-size:1.4rem;
   }
 
