@@ -9,6 +9,7 @@ img.img-fluid {
   font-family:$sans-bold;
   padding:15px 20px;
   width:300px;
+  height:85px;
   &:hover {
     color:#fff;
     opacity: .85;
@@ -251,6 +252,9 @@ table.dataTable tr.even td {
 }
 .bg-recpool {
   background-color: $recpool-blue;
+}
+.bg-winegrape {
+  background-color:$wine-grape;
 }
 .primary-color {
   color:$primary-color;
