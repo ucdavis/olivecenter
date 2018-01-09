@@ -19,11 +19,18 @@ a {
   color:$a-link;
   &:hover {
     color:$primary-color;
+
   }
 }
 p a {
   font-weight: 700;
-  text-decoration: underline
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+a.no-underline {
+  text-decoration: none;
 }
 a:hover {
   text-decoration: none;
