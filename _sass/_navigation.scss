@@ -1,5 +1,11 @@
-.header-home {
-
+.navbar-toggler {
+  img {
+width:30px;
+  }
+  p {
+  font-family: $sans-bold;
+  color:#fff;
+  }
 }
 .navbar {
   padding-top:0px;
