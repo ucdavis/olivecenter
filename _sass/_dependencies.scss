@@ -85,6 +85,11 @@ $shingle-brown: #4f2c1d;
             @content ;
         }
     }
+    @if $point==smmaxbreak {
+        @media (max-width: 576px) {
+            @content ;
+        }
+    }
     @if $point==mdbreak {
         @media (max-width: 767px) {
             @content ;

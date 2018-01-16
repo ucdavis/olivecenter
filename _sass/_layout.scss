@@ -144,7 +144,6 @@ header.header-home {
 }
 .cta-descrip {
   margin:24px 0px;
-
 }
 .custom-col {
   flex-basis: 0;
@@ -160,13 +159,13 @@ header.header-home {
     min-height:582px;
   }
 }
-.col-md-4 {
-  padding-top:24px;
-  @include breakpoint(rufus) {
-    padding-left:32px;
-  }
-
-}
+// .sidebar .col-md-4 {
+//   padding-top:24px;
+//   @include breakpoint(rufus) {
+//     padding-left:32px;
+//   }
+//
+// }
 .event-sidebar {
   padding-top:26px;
   p {
@@ -177,10 +176,9 @@ header.header-home {
   .lead {
     margin-bottom:24px;
   }
-  .media {
-    margin-bottom:40px;
-    &:hover {
-      background-color:$bg-color;
+  .col-md-4 {
+    img {
+      width:100%;
     }
   }
 }

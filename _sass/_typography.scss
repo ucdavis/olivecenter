@@ -19,7 +19,13 @@ a {
   color:$a-link;
   &:hover {
     color:$primary-color;
-
+  }
+  &.post-link {
+    display:block;
+    margin-bottom:16px;
+    &:hover {
+      background-color:$bg-color;
+    }
   }
 }
 p a {
