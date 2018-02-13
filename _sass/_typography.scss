@@ -28,13 +28,14 @@ a {
     }
   }
 }
-p a {
+p a ,.content-block li a {
   font-weight: 700;
   text-decoration: underline;
   &:hover {
     text-decoration: underline;
   }
 }
+
 a.no-underline {
   text-decoration: none;
 }
