@@ -276,3 +276,49 @@ table.dataTable tr.even td {
 .a-color {
   color:$a-link;
 }
+#sponsors-btn {
+  width: auto;
+  height: auto;
+}
+.logo {
+  max-width: 100%;
+  max-height: 15rem;
+  max-width: 30rem;
+  &.logo-sm {
+    max-width:15rem;
+  }
+}
+.divider {
+  border-bottom: 1px solid;
+  text-align: center;
+  position: relative;
+  height: 5rem;
+  svg {
+    position: absolute;
+    bottom: -3.5rem;
+    width: 12rem;
+    height: 8rem;
+    margin-left: -6rem;
+    border-right: 20px solid #fff;
+    border-left: 20px solid #fff;
+    background-color: #fff;
+  }
+  &.border-gold {
+    border-bottom-color: #ffea7c;
+    svg {
+      fill: gold;
+    }
+  }
+  &.border-silver {
+    border-bottom-color: #d2d2d2;
+    svg {
+      fill: silver;
+    }
+  }
+  &.border-bronze {
+    border-bottom-color: #d6c0af;
+    svg {
+      fill: #9d6d51;
+    }
+  }
+}
