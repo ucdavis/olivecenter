@@ -287,6 +287,9 @@ table.dataTable tr.even td {
   &.logo-sm {
     max-width:15rem;
   }
+  &.logo-md {
+    max-width: 20rem;
+  }
 }
 .divider {
   border-bottom: 1px solid;
