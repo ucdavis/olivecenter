@@ -11,7 +11,7 @@ replyto:
 themecolor: 848B14
 repo: "https://github.com/ucdavis/olivecenter"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://olivecenter.ucdavis.edu" # the base hostname & protocol for your site
+url: "https://olivecenter.ucdavis.edu" # the base hostname & protocol for your site
 
 break: md
 
