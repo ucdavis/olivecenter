@@ -245,7 +245,12 @@ table.dataTable tr.even td {
 .border-blue-bottom {
   border-bottom: 1px solid $accent;
 }
-
+.divider.border-plat {
+  color:silver;
+}
+.divider.border-plat svg {
+  fill: silver;
+}
 .border-blue-right {
   border-right: 1px solid $accent;
 }
