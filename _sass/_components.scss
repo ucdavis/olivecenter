@@ -245,12 +245,7 @@ table.dataTable tr.even td {
 .border-blue-bottom {
   border-bottom: 1px solid $accent;
 }
-.divider.border-plat {
-  color:silver;
-}
-.divider.border-plat svg {
-  fill: silver;
-}
+
 .border-blue-right {
   border-right: 1px solid $accent;
 }
@@ -298,9 +293,12 @@ table.dataTable tr.even td {
 }
 .divider {
   border-bottom: 1px solid;
-  text-align: center;
   position: relative;
-  height: 5rem;
+  height: 4rem;
+  margin-top:30px;
+  h1 {
+    margin-left:62px;
+  }
   svg {
     position: absolute;
     bottom: -3.5rem;
@@ -311,20 +309,38 @@ table.dataTable tr.even td {
     border-left: 20px solid #fff;
     background-color: #fff;
   }
+  &.border-plat {
+    border-bottom-color:#A0A0A0;
+    h1 {
+      color:#A0A0A0;
+    }
+    svg {
+      fill:#A0A0A0;
+    }
+  }
   &.border-gold {
-    border-bottom-color: #ffea7c;
+    border-bottom-color: gold;
+    h1 {
+      color:gold;
+    }
     svg {
       fill: gold;
     }
   }
   &.border-silver {
     border-bottom-color: #d2d2d2;
+    h1 {
+      color:#d2d2d2;
+    }
     svg {
       fill: silver;
     }
   }
   &.border-bronze {
-    border-bottom-color: #d6c0af;
+    border-bottom-color: #9d6d51;
+    h1 {
+      color:#9d6d51;
+    }
     svg {
       fill: #9d6d51;
     }
