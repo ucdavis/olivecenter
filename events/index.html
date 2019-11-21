@@ -18,24 +18,43 @@ title: Events at the UC Davis Olive Center
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.description }}</p>
       <!-- <p>New events coming soon!</p> -->
-      {% for post in site.categories.events %}
-      <a class="post-link" target="_blank" href="{{ post.hyperlink }}">
+      <div class="event-wrap">
         <div class="row">
-          <div class="col-md-4">
-            {% if post.imagethumb %}
-            <img style="width:100%;" src="/media/{{ post.imagethumb }}">
-            {% endif %}
+          <div class="col-md-4 t-center">
+            <img style="max-width:100%;" src="/media/events/sensory2020.png" alt="Woman performing Olive Oil testing">
+            <p><a class="mt-3 btn-borderonly full-width" target="_blank" href="https://registration.ucdavis.edu/Item/Details/597">Register Here</a></p>
           </div>
           <div class="col-md-7">
-            <h2>
-              {{ post.title }}
-            </h2>
-            <h5 class="event-date">{{ post.date-display }}</h5>
-            <p class="event-description">{{ post.description }}</p>
+            <h2>Sensory Evaluation of Olive Oil Certificate Course</h2>
+            <p><b>June 23-24, 2020</b></p>
+            <p>The essential sensory course for the professional buyer, importer, category manager, producer, or anyone who wants to gain expertise in evaluating olive oil. Sensory, culinary, chemistry and policy experts guide you through a unique tasting and educational odyssey.</p>
+            <p><b>Reviews from 2019 Course:</b></p>
+            <ul>
+              <li>"Presenters and their content and delivery were spot on for what we, as a diverse group of olive oil lovers, need to become discriminating tasters. I am impressed with the organization and how well the book was put together. This attention to detail mirrored the professionalism of all involved to make this a successful day for us."</li>
+              <li>"I'm in awe of how much I learned during this two day course. I came into it an olive oil novice and I feel so much more confident talking about extra virgin olive oil and understanding what I'm tasting. Thank you so much, Sue!"</li>
+            </ul>
+
           </div>
         </div>
-      </a>
-      {% endfor %}
+        <div class="row">
+          <div class="col-md-4 t-center">
+            <img style="max-width:100%;" src="/media/events/master-milling2020.png" alt="Tour at an Olive Processing Facility">
+            <p><a class="mt-3 btn-borderonly full-width" target="_blank" href="https://registration.ucdavis.edu/Item/Details/598">Register Here</a></p>
+          </div>
+          <div class="col-md-7">
+            <h2>Master Milling Certificate Course</h2>
+            <p><b>September 21-23, 2020</b></p>
+            <p>The Master Milling Certificate Course has helped hundreds of olive oil processors produce better oil more efficiently. The course will be led by Leandro Ravetti, among the world’s top experts in olive oil processing, growing, and standards. As executive director of Australia’s Boundary Bend Limited, Leandro has helped guide the company to rapid growth, optimum efficiency, and top awards at international olive oil competitions. </p>
+            <p><b>Reviews from 2019 Course:</b></p>
+            <ul>
+              <li>“I thought it was a very good course. Very good instructor.  We are going to implement some of the milling techniques we learned in in milling this year.  I think we can improve on the process.  I am interested in taking it again next year.”</li>
+              <li>“I am new to the olive oil industry as I have taken over my father in-law’s orchard so the information given today was very helpful in my understanding of things.”</li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <h2></h2>
     </div>
     <div class="sidebar col-md-4">
       <div class="card">
