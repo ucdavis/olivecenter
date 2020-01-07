@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="15px" viewBox="0 0 88 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>rating bubbles</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rating-bubbles" transform="translate(1.000000, 1.000000)">
+            <circle id="Oval" stroke="#DAAA00" fill="#DAAA00" cx="6.5" cy="6.5" r="7"></circle>
+            <circle id="Oval-Copy-2" stroke="#DAAA00" fill="#DAAA00" cx="43.5" cy="6.5" r="7"></circle>
+            <circle id="Oval-Copy" stroke="#DAAA00" fill="#DAAA00" cx="24.5" cy="6.5" r="7"></circle>
+            <circle id="Oval-Copy-3" stroke="#DAAA00" fill="#DAAA00" cx="61.5" cy="6.5" r="7"></circle>
+            <circle id="Oval-Copy-4" stroke="#DAAA00" cx="79.5" cy="6.5" r="7"></circle>
+            <rect id="Rectangle" fill="#DAAA00" x="76" y="0" width="7" height="13"></rect>
+            <path d="M74.5248413,1.83288574 L75.7259521,0.837524414 L78,0 L78,12 C76.2033097,13.2651517 75.0449235,13.1369372 74.5248413,11.6153564 C74.0047592,10.0937757 74.0047592,6.83295212 74.5248413,1.83288574 Z" id="Rectangle-Copy-3" fill="#DAAA00"></path>
+            <rect id="Rectangle-Copy-2" fill="#DAAA00" x="74" y="2" width="2" height="9"></rect>
+            <rect id="Rectangle-Copy" fill="#DAAA00" x="73" y="3" width="6" height="7"></rect>
+            <rect id="Rectangle" fill="#DAAA00" x="83" y="1" width="1" height="11"></rect>
+        </g>
+    </g>
+</svg>
