@@ -249,7 +249,6 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
-    wdm (0.1.1)
     zeitwerk (2.3.0)
 
 PLATFORMS
@@ -263,7 +262,6 @@ DEPENDENCIES
   jekyll-sitemap
   nokogiri (>= 1.10.8)
   octopress-autoprefixer
-  wdm (>= 0.1.0)
 
 BUNDLED WITH
-   1.17.3
+   2.1.2
