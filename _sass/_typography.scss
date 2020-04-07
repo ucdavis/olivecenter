@@ -62,7 +62,7 @@ p {
   color:$primary-font;
   // margin:1.2rem 0rem;
   &.lead {
-    font-size:1.8rem;
+    font-size:2rem;
     margin-top:0px;
   }
   footer & {
@@ -107,4 +107,15 @@ table {
   // }
   border-bottom:4px solid $accent;
   padding-right:24px;
+}
+#breadcrumbs {
+  margin:16px 0;
+  font-size:1.4rem;
+  color:transparentize($primary-color,0.25);
+  a {
+    color:$tertiary-font;
+    &:hover {
+      color:$primary-color;
+    }
+  }
 }
