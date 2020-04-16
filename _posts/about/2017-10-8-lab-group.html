@@ -86,7 +86,7 @@ tag:
       <td width="20%"><img alt="Vici Thahir" class="img-fluid" src="/media/labgroup/20/vici-thahir.jpg" /></td>
       <td width="80%">
         <h2>Vici Thahir</h2>
-<p>Vici is a second year undergraduate student majoring in Food Science and Technology. She started working as an undergraduate lab assistant since Fall 2019 and really enjoys her time in the lab. Her daily job is usually helping out with the experiments with other interns and inputting experiment data. Besides school, she is involved in the Food Tech Club and one of the coordinators of Food Science contest in FFA Field Day 2020. During her free time, she likes listening to music, reading books, and playing the piano. Ask her about her favorite coffee places on campus! In the future, she hopes to use her Food Science degree to further study sensory science as well as make sense the consumer trends in the food industry. 
+<p>Vici is a second year undergraduate student majoring in Food Science and Technology. She started working as an undergraduate lab assistant since Fall 2019 and really enjoys her time in the lab. Her daily job is usually helping out with the experiments with other interns and inputting experiment data. Besides school, she is involved in the Food Tech Club and one of the coordinators of Food Science contest in FFA Field Day 2020. During her free time, she likes listening to music, reading books, and playing the piano. Ask her about her favorite coffee places on campus! In the future, she hopes to use her Food Science degree to further study sensory science as well as make sense the consumer trends in the food industry.
 </p>
       </td>
     </tr>
@@ -137,6 +137,24 @@ tag:
 
   </div>
   <div class="col-{{ site.break }}-4">
-    {% include about_block.html %}
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">In this section</h4>
+        <p class="card-text">Our world-class laboratories solve practical problems for growers and processors, anticipating and evaluating challenges and opportunities</p>
+        <ul class="list-group list-group-flush">
+
+           {% for post in site.tags.aboutactive %}
+            {% if page.url == post.url %}
+            <li class="list-group-item"><a class="secondary-color" href="{{post.permalink}}">{{ post.title }}</a></li>
+            {% else %}
+          <li class="list-group-item"><a href="{{post.permalink}}">{{ post.title }}</a></li>
+            {% endif %}
+
+          {% endfor %}
+      </ul>
+      </div>
+    </div>
+
+
   </div>
 </div>
