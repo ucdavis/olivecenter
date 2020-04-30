@@ -59,31 +59,40 @@ header {
   }
 }
 header.header-home {
-  h1 {
-    color:#fff;
+  padding:0;
 
-  }
-  p {
-    color:#fff;
-    margin-bottom:-8px;
-  }
-  p a {
-    color:#fff;
-    font-style:normal;
-    font-size:1.8rem;
-    font-weight:600;
-    &:hover {
-      color:$secondary-color;
+  .video-wrapper {
+    position: relative;
+    h1 {
+      color:#fff;
+    }
+    p {
+      color:#fff;
+      margin-bottom:-8px;
+    }
+    p a {
+      color:#fff;
+      font-style:normal;
+      font-size:1.8rem;
+      font-weight:600;
+      &:hover {
+        color:$secondary-color;
+      }
+    }
+    @media (max-width:768px) {
+      background:url(/media/home-banner.jpg) center top/cover no-repeat;
     }
   }
-  background: url(/media/home-banner.jpg) center top/cover no-repeat;
-  .banner-cta {
-    margin-top:21%;
-    margin-bottom:4%;
+  .video-nav {
+    top:4%;
+    @include videosizes;
   }
-  .banner-contents {
+  .video-cta {
+    @include videosizes;
     width:40%;
-    @include breakpoint(tablet) {
+    bottom:0;
+    padding-bottom:4%;
+    @media (max-width: 768px) {
       width:100%;
     }
   }
@@ -94,6 +103,7 @@ header.header-home {
     background: -webkit-linear-gradient(left,#1e3a5b 0%,#1e3a5b 44%,#dbbc5b 57%,#dbbc5b 100%);
     background: linear-gradient(to right,#1e3a5b 0%,#1e3a5b 44%,#dbbc5b 57%,#dbbc5b 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradient-one',endColorstr='$gradient-two',GradientType=1);
+    margin-top:-5px;
 }
 .head_divider {
     background: url(/media/gunrock_banner_final.svg) center top/cover no-repeat;

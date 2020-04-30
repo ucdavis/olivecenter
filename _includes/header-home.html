@@ -1,40 +1,34 @@
 <header class="header-home">
-  <div class="container">
-    <div class="row flex-between">
-      <div class="col">
-        <a href="/">
-          <img src="/media/logowhite.svg" alt="UC Davis logo">
+  <div class="video-wrapper">
+    <div class="video-source" data-hero-banner-video="https://player.vimeo.com/external/151811595.hd.mp4?s=49d3bfdee7ef49a283718eb0730ce0806c72986b&amp;profile_id=119"><video class="hero-banner__video" width="100%" autoplay="true" loop="true" muted="true"><source src="https://player.vimeo.com/external/151811595.hd.mp4?s=49d3bfdee7ef49a283718eb0730ce0806c72986b&amp;profile_id=119" type="video/mp4"></video></div>
 
-        </a>
-
-      </div>
-      <div class="col-sm-3 align-center m-b">
-        <form class="small_search" action="/search" method="GET">
-          <input type="text" name="q" autocomplete="off" required>
-        </form>
-      </div>
-    </div>
-
-
-    {% include navigation.html %}
-    <div class="banner-cta">
-
-        <div class="banner-contents">
-
-          <h1>
-            Building <span class="gold">California's</span> Crop  <br> of the Future
-          </h1>
-          <div class="border-top" style="margin-top:10px;">
-            <p>
-              <a class="no-underline" href="/about">Learn about our work <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-            </p>
+      <div class="video-nav">
+        <div class="row flex-between">
+          <div class="col">
+            <a href="/">
+              <img src="/media/logowhite.svg" alt="UC Davis logo">
+            </a>
           </div>
-
+          <div class="col-sm-3 align-center m-b">
+            <form class="small_search" action="/search" method="GET">
+              <input type="text" name="q" autocomplete="off" required>
+            </form>
+          </div>
         </div>
+      {% include navigation.html %}
+      </div>
+      <div class="video-cta">
+            <h1>
+              Building <span class="gold">California's</span> Crop  <br> of the Future
+            </h1>
+            <div class="border-top" style="margin-top:10px;">
+              <p>
+                <a class="no-underline" href="/about">Learn about our work <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              </p>
+            </div>
+      </div>
+  </div>
 
-
-    </div>
-</div>
 </header>
 <div class="head_bleed">
   <div class="head_divider">
