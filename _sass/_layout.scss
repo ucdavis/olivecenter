@@ -60,7 +60,6 @@ header {
 }
 header.header-home {
   padding:0;
-
   .video-wrapper {
     position: relative;
     h1 {
@@ -81,6 +80,10 @@ header.header-home {
     }
     @media (max-width:768px) {
       background:url(/media/home-banner.jpg) center top/cover no-repeat;
+      height:62rem;
+      video {
+        display: none;
+      }
     }
   }
   .video-nav {
