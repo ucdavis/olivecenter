@@ -87,7 +87,13 @@ header.header-home {
     }
   }
   .video-nav {
-    top:4%;
+    top:2%;
+    padding-top:4%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
     @include videosizes;
   }
   .video-cta {
