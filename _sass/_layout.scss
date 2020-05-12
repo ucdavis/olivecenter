@@ -43,8 +43,10 @@ body {
 }
 header {
   // background-color: $primary-color;
-  padding-top:24px;
-  padding-bottom:4px;
+  .logo {
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
   h1 {
     img {
       padding-bottom:6px;
@@ -61,15 +63,14 @@ header {
 }
 header.header-home {
   padding:0;
+  .logo {
+    padding-bottom: 0;
+  }
   .video-wrapper {
     position: relative;
     background:url(/media/home-banner.jpg) no-repeat;
     h1 {
       color:#fff;
-    }
-    p {
-      color:#fff;
-      margin-bottom:-8px;
     }
     p a {
       color:#fff;
@@ -80,9 +81,10 @@ header.header-home {
         color:$secondary-color;
       }
     }
+    video {
+      display: block;
+    }
     @media (max-width:768px) {
-
-      height:45vh;
       video {
         display: none;
       }
@@ -97,14 +99,19 @@ header.header-home {
     background: linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
     @include videosizes;
+    @media (max-width: 768px) {
+      position: static;
+    }
   }
   .video-cta {
     @include videosizes;
     width:50%;
     bottom:0;
-    padding-bottom:4%;
+    padding-bottom: 4%;
+    min-width: 42rem;
+    box-sizing: content-box;
     @media (max-width: 768px) {
-      width:100%;
+      display: none;
     }
   }
 }
@@ -114,13 +121,13 @@ header.header-home {
     background: -webkit-linear-gradient(left,#1e3a5b 0%,#1e3a5b 44%,#dbbc5b 57%,#dbbc5b 100%);
     background: linear-gradient(to right,#1e3a5b 0%,#1e3a5b 44%,#dbbc5b 57%,#dbbc5b 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$gradient-one',endColorstr='$gradient-two',GradientType=1);
-    margin-top:-5px;
 }
 .head_divider {
     background: url(/media/gunrock_banner_final.svg) center top/cover no-repeat;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 1rem;
 }
 .annoucnements p {
   margin-bottom:0px;

@@ -6,38 +6,35 @@ width:30px;
   font-family: $sans-bold;
   color:#fff;
   font-style:inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1rem;
   }
 }
-.head-contents {
-  .navbar-toggler {
-    img {
-  width:30px;
-  margin:10px 0px;
-    }
-    p {
-    font-family: $sans-bold;
-    color:#fff;
-    font-size: 2.2rem;
-    margin-top: 16px;
-    }
+.navbar-toggler {
+  img {
+width:30px;
+margin:10px 0px;
   }
-  @include breakpoint(smmaxbreak) {
-    .dropdown-menu {
-      background-color:rgba(255,255,255,0.25);
-      border:1px solid rgba(255,255,255,.0001);
-      .dropdown-item {
-        color:rgba(255,255,255,.99);
-      }
-    }
+  p {
+  font-size: 2.2rem;
   }
-
 }
-.navbar {
-  padding-top:0px;
-  padding-bottom:0px;
+@include breakpoint(smmaxbreak) {
+  .dropdown-menu {
+    background-color:rgba(255,255,255,0.25);
+    border:1px solid rgba(255,255,255,.0001);
+    .dropdown-item {
+      color:rgba(255,255,255,.99);
+    }
+  }
 }
 nav.navbar {
-  margin-left: -22px;
+  padding: 0;
+
+  .nav-item {
+    flex-shrink: 0;
+  }
 
   a.nav-link {
     color:rgba(255,255,255,0.98);
