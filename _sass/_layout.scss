@@ -62,6 +62,7 @@ header.header-home {
   padding:0;
   .video-wrapper {
     position: relative;
+    background:url(/media/home-banner.jpg) no-repeat;
     h1 {
       color:#fff;
     }
@@ -79,7 +80,7 @@ header.header-home {
       }
     }
     @media (max-width:768px) {
-      background:url(/media/home-banner.jpg) center top/cover no-repeat;
+
       height:62rem;
       video {
         display: none;
@@ -87,8 +88,8 @@ header.header-home {
     }
   }
   .video-nav {
-    top:2%;
-    padding-top:4%;
+    top:0;
+    padding-top:2%;
     background: rgb(0,0,0);
     background: -moz-linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
     background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
@@ -98,7 +99,7 @@ header.header-home {
   }
   .video-cta {
     @include videosizes;
-    width:40%;
+    width:50%;
     bottom:0;
     padding-bottom:4%;
     @media (max-width: 768px) {
