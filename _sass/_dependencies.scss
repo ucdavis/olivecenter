@@ -99,7 +99,7 @@ $shingle-brown: #4f2c1d;
 @mixin videosizes {
   width:100%;
     position: absolute;
-  @media (min-width: 576px) {
+  @media (min-width: 400px) {
     padding-left:1%;
     padding-right:1%;
   }
