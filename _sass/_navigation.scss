@@ -69,9 +69,17 @@ nav.navbar {
   &.show {
     left: 0;
   }
-  &:not(.show) {
-    display: block;
-    visibility: hidden;
+  @include breakpoint (smmaxbreak) {
+    &:not(.show) {
+      display: block;
+      visibility: hidden;
+    }
+  }
+}
+// hide x in navb
+button.close {
+  @include breakpoint (smbreak) {
+    display: none;
   }
 }
 .head_bleed a.nav-link:hover {
