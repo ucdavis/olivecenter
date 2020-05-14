@@ -43,6 +43,37 @@ nav.navbar {
     padding:1rem 1rem !important;
   }
 }
+.navbar-collapse {
+  @include breakpoint(smmaxbreak) {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    min-width: 70%;
+    width: 300px;
+    max-width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    color: white;
+    z-index: 99;
+    transition: left 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  .close {
+    font-size: 5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    color: white;
+  }
+  &.show {
+    left: 0;
+  }
+  &:not(.show) {
+    display: block;
+    visibility: hidden;
+  }
+}
 .head_bleed a.nav-link:hover {
   background-color: rgba(255,255,255,.15)
 }
