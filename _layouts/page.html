@@ -17,8 +17,14 @@ layout: default
   </div>
 
 <div class="container">
+  <!-- {% if page.donor-banner %}
+  <img class="img-fluid" src="{{ page.donor-banner }}" alt="{{ page.donor-caption }}">
+  <p class="caption">
+    {{ page.donor-caption }}
+  </p>
+  {% endif %} -->
   {% if page.banner %}
-  <h1>{{ page.title }}</h1>
+  <h1 class="fancytitle">{{ page.title }}</h1>
   {% endif %}
   {{ content }}
 </div>
