@@ -15,6 +15,7 @@ body {
 }
 .content-wrapper {
   flex: 1 0 auto;
+  min-width: 375px;
 }
 @media (min-width: 576px) {
   .container {
@@ -42,8 +43,10 @@ body {
 }
 header {
   // background-color: $primary-color;
-  padding-top:24px;
-  padding-bottom:4px;
+  .logo {
+    padding-top: 12px;
+    padding-bottom: 7px;
+  }
   h1 {
     img {
       padding-bottom:6px;
@@ -59,32 +62,56 @@ header {
   }
 }
 header.header-home {
-  h1 {
-    color:#fff;
-
+  padding:0;
+  .logo {
+    padding-bottom: 0;
   }
-  p {
-    color:#fff;
-    margin-bottom:-8px;
-  }
-  p a {
-    color:#fff;
-    font-style:normal;
-    font-size:1.8rem;
-    font-weight:600;
-    &:hover {
-      color:$secondary-color;
+  .video-wrapper {
+    position: relative;
+    background:url(/media/home-banner.jpg) no-repeat;
+    h1 {
+      color:#fff;
+    }
+    p a {
+      color:#fff;
+      font-style:normal;
+      font-size:1.8rem;
+      font-weight:600;
+      &:hover {
+        color:$secondary-color;
+      }
+    }
+    video {
+      display: block;
+    }
+    @media (max-width:768px) {
+      video {
+        display: none;
+      }
     }
   }
-  background: url(/media/home-banner.jpg) center top/cover no-repeat;
-  .banner-cta {
-    margin-top:21%;
-    margin-bottom:4%;
+  .video-nav {
+    top:0;
+    padding-top:2%;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5298494397759104) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+    @include videosizes;
+    @media (max-width: 768px) {
+      position: static;
+    }
   }
-  .banner-contents {
-    width:40%;
-    @include breakpoint(tablet) {
-      width:100%;
+  .video-cta {
+    @include videosizes;
+    width:50%;
+    bottom:0;
+    padding-bottom: 4%;
+    min-width: 42rem;
+    box-sizing: content-box;
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }
@@ -100,6 +127,7 @@ header.header-home {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 1rem;
 }
 .annoucnements p {
   margin-bottom:0px;
@@ -231,4 +259,14 @@ footer {
   .row {
     margin-bottom:40px;
   }
+}
+//donor
+.donor-image {
+  margin-left:-14px;
+}
+.donor-image-background {
+  padding:8px;
+  background-color:#fff;
+  border:1px solid rgba(0,0,0,.125);
+  border-radius: 4px;
 }

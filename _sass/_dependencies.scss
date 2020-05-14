@@ -96,3 +96,27 @@ $shingle-brown: #4f2c1d;
         }
     }
 }
+@mixin videosizes {
+  width:100%;
+    position: absolute;
+  @media (min-width: 400px) {
+    padding-left:1%;
+    padding-right:1%;
+  }
+  @media (min-width: 768px) {
+    padding-left:2.5%;
+    padding-right:2.5%;
+  }
+  @media (min-width: 992px) {
+    padding-left:5%;
+    padding-right:5%;
+  }
+  @media (min-width: 1200px) {
+    padding-left:6%;
+    padding-right:6%;
+  }
+  @media (min-width: 1600px) {
+    padding-left:12%;
+    padding-right:12%;
+  }
+}

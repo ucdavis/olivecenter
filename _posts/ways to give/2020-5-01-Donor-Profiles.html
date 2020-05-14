@@ -1,0 +1,46 @@
+---
+layout: page
+title: Donor test
+description: Our work is supported by these generous supporters
+permalink: /ways-to-give/donor-profiles
+image-banner: donate_banner
+---
+
+<div class="row">
+    <p class="lead">{{ page.description }}</p>
+    <div class="row">
+
+
+    {% for post in site.tags.donor %}
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+
+
+        <a class="secondary-color" href="{{ post.permalink }}">
+           <div class="row justify-content-between">
+             <div class="col-md-3">
+               <img class="img-fluid" src="/media/donors/{{ post.donor-thumb }}.png" alt="{{ post.title }}">
+             </div>
+             <div class="col-md-9">
+               <h2>{{ post.title }}</h2>
+               <p>{{ post.description }}</p>
+             </div>
+           </div>
+
+         </a>
+      </div>
+      </div>
+    </div>
+   {% endfor %}
+     </div>
+  <!-- <div class="col-{{ site.break }}-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Support the Olive Center</h3>
+          <p>The Center relies on financial support from those who embrace our innovative and cost-effective efforts for olive growing and processing.</p>
+      <p><a class="btn" href="https://give.ucdavis.edu/Donate/YourGift/RMIOLIV">Make a gift</a></p>
+      </div>
+    </div>
+  </div> -->
+</div>
