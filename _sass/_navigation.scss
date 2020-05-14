@@ -56,6 +56,11 @@ nav.navbar {
     color: white;
     z-index: 99;
     transition: left 0.5s ease-in-out, visibility 0.5s ease-in-out;
+
+    &:not(.show) {
+      display: block;
+      visibility: hidden;
+    }
   }
   .close {
     font-size: 5rem;
@@ -68,12 +73,6 @@ nav.navbar {
   }
   &.show {
     left: 0;
-  }
-  @include breakpoint (smmaxbreak) {
-    &:not(.show) {
-      display: block;
-      visibility: hidden;
-    }
   }
 }
 // hide x in navb
