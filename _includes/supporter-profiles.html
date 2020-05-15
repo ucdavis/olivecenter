@@ -1,9 +1,9 @@
 <div class="card">
   <div class="card-body">
-    <h3 class="card-title">Donor Profiles</h3>
-    <p class="card-text">Learn about the generous donors who support the UC Davis Olive Center.</p>
+    <h3 class="card-title">Supporter Profiles</h3>
+    <p class="card-text">Learn about the generous supporters of the UC Davis Olive Center.</p>
     <ul class="list-group list-group-flush">
-       {% for post in site.tags.donor %}
+       {% for post in site.tags.supporter %}
         {% if page.url == post.url %}
         <li class="list-group-item"><a class="secondary-color" href="{{post.permalink}}">{{ post.title }}</a></li>
         {% else %}
