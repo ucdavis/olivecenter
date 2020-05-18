@@ -125,3 +125,12 @@ table {
   font-style: italic;
   margin:4px;
 }
+blockquote {
+  border-left:4px solid rgba(0,40,85,.12);
+  padding-left:4%;
+  font-size:1.6rem;
+  font-size: italic
+}
+.blockquote-footer {
+  font-size:1.6rem;
+}
