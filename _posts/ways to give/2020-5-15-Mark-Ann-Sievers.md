@@ -1,11 +1,11 @@
 ---
 layout: donor
-title: Marc and Ann Sievers
-description: Marc and Ann Sievers, owners of Il Fiorello Olive Oil Company, have generously transported and milled the Olive Center’s olives for several years without charge.
-permalink: /ways-to-give/supporter-profiles/marc-ann
+title: Mark and Ann Sievers
+description: Mark and Ann Sievers, owners of Il Fiorello Olive Oil Company, have generously transported and milled the Olive Center’s olives for several years without charge.
+permalink: /ways-to-give/supporter-profiles/mark-ann
 supporter-thumb: sievers-thumb.jpg
 supporter-image: sievers.jpg
-supporter-caption: Marc and Ann Sievers
+supporter-caption: Mark and Ann Sievers
 tag:
   - supporter
 ---
