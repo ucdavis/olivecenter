@@ -6,7 +6,7 @@
   {% if forloop.last %}
     / <span property="itemListElement" typeof="ListItem"><meta property="position" content="{{index}}" /><span property="item" typeof="Thing"><span property="name">{{ page.title }}</span></span></span>
   {% else %}
-    / <span property="itemListElement" typeof="ListItem"><meta property="position" content="{{index}}" /><span property="item" typeof="Thing" resource="{% for crumb in crumbs limit: index %}{{ crumb | append: '/' }}{% endfor %}"><a property="url" href="{% for crumb in crumbs limit: index %}{{ crumb | append: '/' }}{% endfor %}"><span property="name">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span></a></span></span>
+    / <span property="itemListElement" typeof="ListItem"><meta property="position" content="{{index}}" /><span property="item" typeof="Thing" resource="{{site.url}}{% for crumb in crumbs limit: index %}{{ crumb | append: '/' }}{% endfor %}"><a property="url" href="{% for crumb in crumbs limit: index %}{{ crumb | append: '/' }}{% endfor %}"><span property="name">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</span></a></span></span>
   {% endif %}
 {% endfor %}
 </div>
