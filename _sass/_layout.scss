@@ -144,6 +144,10 @@ header.header-home {
       border-bottom:1px solid $accent;
     }
   }
+  .border-col {
+    border-right:1px solid $accent;
+    border-left: 1px solid $accent;
+  }
   .event-left {
     margin-left:48px;
     @include breakpoint(tablet) {
@@ -153,7 +157,7 @@ header.header-home {
   p {
     font-size:1.8rem;
   }
-  .col-md-6 {
+  .event {
     padding:80px 0px;
   }
 
