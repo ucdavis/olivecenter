@@ -2,34 +2,32 @@ img.img-fluid {
   width: 100%;
 }
 .action-btn {
-  display:block;
-  font-size:2rem;
-  color:#fff;
-  background-color:$gold;
-  font-family:$sans-bold;
-  padding:15px 20px;
-  width:265px;
-  height:85px;
+  display: block;
+  font-size: 2rem;
+  color: #fff;
+  background-color: $gold;
+  font-family: $sans-bold;
+  padding: 15px 20px;
+  width: 265px;
+  height: 85px;
 
   &:hover {
-    color:#fff;
-    opacity: .85;
+    color: #fff;
+    opacity: 0.85;
   }
 }
 p a.action-btn {
-    text-decoration: none !important;
-
+  text-decoration: none !important;
 }
 .btn-borderonly {
-  border:1px solid rgba(0, 40, 85, 0.8);
-  padding:1rem 2rem;
-  display:inline-block;
-    color:transparentize($primary-color, .2);
-    text-decoration: none !important;
+  border: 1px solid rgba(0, 40, 85, 0.8);
+  padding: 1rem 2rem;
+  display: inline-block;
+  color: transparentize($primary-color, 0.2);
+  text-decoration: none !important;
   &:hover {
-    background-color:$accent;
+    background-color: $accent;
   }
-
 }
 .btn {
   white-space: nowrap;
@@ -37,7 +35,7 @@ p a.action-btn {
   height: 40px;
   line-height: 40px;
   padding: 0 20px;
-  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0,0,0,.08);
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 1px 3px rgba(0, 0, 0, 0.08);
   background: $primary-color;
   border-radius: 2px;
   font-size: 1.6rem;
@@ -56,7 +54,8 @@ p a.action-btn {
   &:hover {
     color: #fff !important;
     transform: translateY(-1px);
-    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset, 0 3px 6px rgba(0,0,0,.08);
+    box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.15) inset,
+      0 3px 6px rgba(0, 0, 0, 0.08);
     background-color: lighten($primary-color, 5);
   }
 }
@@ -72,7 +71,8 @@ p a.action-btn {
     margin-right: 20px;
   }
 
-  .media-body {}
+  .media-body {
+  }
 }
 
 ol.breadcrumb {
@@ -107,7 +107,7 @@ ol.breadcrumb {
     color: $secondary-font;
   }
 
-  > li+li:before {
+  > li + li:before {
     color: $tertiary-font;
     content: "/";
   }
@@ -126,7 +126,7 @@ ol.breadcrumb {
     h1 {
       color: #fff;
       display: inline;
-      border-left: 8px solid #CCD4E0;
+      border-left: 8px solid #ccd4e0;
       font-size: 2.8rem;
       padding: 6px 18px 6px 14px;
       margin-left: -24px;
@@ -226,11 +226,11 @@ table.dataTable tr.even td.sorting_1 {
 }
 
 table.dataTable tr.odd td {
-  background-color: darken($accent,5%);
+  background-color: darken($accent, 5%);
 }
 
 table.dataTable tr.even td {
-  background-color: darken(#fefefe,5%);
+  background-color: darken(#fefefe, 5%);
 }
 
 .gold {
@@ -238,7 +238,7 @@ table.dataTable tr.even td {
 }
 
 .border-top {
-  border-top: 2px solid rgba(255,255,255,0.95);
+  border-top: 2px solid rgba(255, 255, 255, 0.95);
 }
 
 .border-blue-top {
@@ -253,7 +253,7 @@ table.dataTable tr.even td {
   border-right: 1px solid $accent;
 }
 .bg-unitrans {
-  background-color:$unitrans-red;
+  background-color: $unitrans-red;
 }
 .bg-sunny-grass {
   background-color: $sunny-grass;
@@ -265,19 +265,22 @@ table.dataTable tr.even td {
   background-color: $recpool-blue;
 }
 .bg-winegrape {
-  background-color:$wine-grape;
+  background-color: $wine-grape;
+}
+.bg-poppy {
+  background-color: $california-poppy;
 }
 .primary-color {
-  color:$primary-color;
+  color: $primary-color;
 }
 .secondary-color {
-  color:$secondary-color;
+  color: $secondary-color;
 }
 .accent-color {
-  color:$accent;
+  color: $accent;
 }
 .a-color {
-  color:$a-link;
+  color: $a-link;
 }
 #sponsors-btn {
   width: auto;
@@ -288,7 +291,7 @@ table.dataTable tr.even td {
   max-height: 15rem;
   max-width: 30rem;
   &.logo-sm {
-    max-width:15rem;
+    max-width: 15rem;
   }
   &.logo-md {
     max-width: 20rem;
@@ -298,9 +301,9 @@ table.dataTable tr.even td {
   border-bottom: 1px solid;
   position: relative;
   height: 4rem;
-  margin-top:30px;
+  margin-top: 30px;
   h1 {
-    margin-left:62px;
+    margin-left: 62px;
   }
   svg {
     position: absolute;
@@ -313,18 +316,18 @@ table.dataTable tr.even td {
     background-color: #fff;
   }
   &.border-plat {
-    border-bottom-color:#A0A0A0;
+    border-bottom-color: #a0a0a0;
     h1 {
-      color:#A0A0A0;
+      color: #a0a0a0;
     }
     svg {
-      fill:#A0A0A0;
+      fill: #a0a0a0;
     }
   }
   &.border-gold {
     border-bottom-color: gold;
     h1 {
-      color:gold;
+      color: gold;
     }
     svg {
       fill: gold;
@@ -333,7 +336,7 @@ table.dataTable tr.even td {
   &.border-silver {
     border-bottom-color: #d2d2d2;
     h1 {
-      color:#d2d2d2;
+      color: #d2d2d2;
     }
     svg {
       fill: silver;
@@ -342,7 +345,7 @@ table.dataTable tr.even td {
   &.border-bronze {
     border-bottom-color: #9d6d51;
     h1 {
-      color:#9d6d51;
+      color: #9d6d51;
     }
     svg {
       fill: #9d6d51;
