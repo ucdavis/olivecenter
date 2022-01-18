@@ -10,26 +10,28 @@ String.prototype.trunc = function (n) {
 };
 
 $(function () {
-    var url = "https://spreadsheets.google.com/feeds/list/0AhTxmYCYi3fpdEJDZnBsb2FnNTVucGdRb1pHRExyUmc/1/public/values?alt=json-in-script&callback=?";
+    var url = "https://sheets.googleapis.com/v4/spreadsheets/1rKvO6WdHDj-J4XfAf3Ms_sKgVZnFb9VaAfx-gHijZKI/values/Individual_Research?key=AIzaSyA3dk7j-VOX78HlLFqsOEHNL5rDljrMtIA";
     $.getJSON(url, {}, function (data) {
-        $.each(data.feed.entry, function (key, val) {
-            var title = val.gsx$title.$t;
-            var authors = val.gsx$authors.$t;
-            var source = val.gsx$source.$t;
-            var year = val.gsx$year.$t;
-            var keyword = val.gsx$keywords.$t;
-            var abstract = val.gsx$abstract.$t;
-            var link = val.gsx$linkstowhat.$t;
+        for (let i = 1; i < data["values"].length; i++) {
+            const currRow = data["values"][i];
+
+            var title = currRow[0];
+            var authors = currRow[1];
+            var source = currRow[2];
+            var year = currRow[3];
+            var keyword = currRow[7] || "";
+            var abstract = currRow[6];
+            var link = currRow[5];
 
             MyApp.spreadsheetData.push(
                 [
-                    GenerateTitleColumn(val), authors, source, year, keyword
+                    GenerateTitleColumn(title, abstract, link), authors, source, year, keyword
                 ]);
 
             if ($.inArray(keyword, MyApp.keywords) === -1 && keyword.length !== 0) {
                 MyApp.keywords.push(keyword);
             }
-        });
+        }
 
         MyApp.keywords.sort();
 
@@ -39,11 +41,7 @@ $(function () {
     });
 })
 
-function GenerateTitleColumn(entry) { //entry value from spreadsheet
-    var title = entry.gsx$title.$t;
-    var abstract = entry.gsx$abstract.$t;
-    var link = entry.gsx$linkstowhat.$t;
-
+function GenerateTitleColumn(title, abstract, link) { //entry value from spreadsheet
     return "<a href='" + link + "' class='abstract-popover' data-toggle='popover' data-content='" + abstract + "' data-original-title='Abstract'>" + title + "</a>";
 }
 
