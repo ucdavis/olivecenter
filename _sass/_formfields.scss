@@ -1,54 +1,51 @@
-.searchwrapper {
-
-}
 .main_search {
-    width:100%;
-    margin:0 auto;
-    border-bottom:1px solid $borders;
-    padding-bottom:20px;
-    margin-bottom:20px;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid $borders;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 form.small_search {
-    input {
-        background-image:url(/media/search_form.svg);
-        background-repeat:no-repeat;
-        background-size: 18px 18px;
-        width:100%;
-        font-size:1.6rem;
-        color:$primary-font;
-        background-color:rgba(255,255,255,0.5);
-        border-radius:2px;
-        border:1px solid $borders;
-        height:32px;
-        padding-left:35px;
-        background-position:10px center;
-        margin-top:6px;
-        box-sizing:inherit !important;
-        .header-home & {
-          background-color: rgba(255,255,255,.15);
-          color:#fff;
-          border:1px solid #fff;
-          background-image:url(/media/search_form_home.svg);
-        }
+  input {
+    background-image: url(/media/search_form.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    width: 100%;
+    font-size: 1.6rem;
+    color: $primary-font;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    border: 1px solid $borders;
+    height: 32px;
+    padding-left: 35px;
+    background-position: 10px center;
+    margin-top: 6px;
+    box-sizing: inherit !important;
+    .header-home & {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: 1px solid #fff;
+      background-image: url(/media/search_form_home.svg);
     }
+  }
 }
 form.search_form {
-    input.search_input {
-        width:85%;
-        font-size:1.6rem;
-        color:$primary-font;
-        background-color:#fff;
-        border-radius:2px;
-        border:1px solid $borders;
-        height:40px;
-        margin-top:1px;
-        padding-left:10px;
-        background-position:10px center;
-    }
-    input.search_go {
-        width:14%;
-        font-size:1.6rem;
-        border-radius:0px;
-        height:40px;
-    }
+  input.search_input {
+    width: 85%;
+    font-size: 1.6rem;
+    color: $primary-font;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid $borders;
+    height: 40px;
+    margin-top: 1px;
+    padding-left: 10px;
+    background-position: 10px center;
+  }
+  input.search_go {
+    width: 14%;
+    font-size: 1.6rem;
+    border-radius: 0px;
+    height: 40px;
+  }
 }
