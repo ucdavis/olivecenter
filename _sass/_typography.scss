@@ -1,34 +1,35 @@
 // baseline typography
 html {
-    font-size: 10px;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-    line-height: 1.5;
-    //
-    // @include breakpoint(tablet) {
-    //     font-size: 8px;
-    // }
-    // @include breakpoint(mobile) {
-    //     font-size: 7px;
-    // }
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  line-height: 1.5;
+  //
+  // @include breakpoint(tablet) {
+  //     font-size: 8px;
+  // }
+  // @include breakpoint(mobile) {
+  //     font-size: 7px;
+  // }
 }
 body {
-    font-family: $sans-reg;
+  font-family: $sans-reg;
 }
 a {
-  color:$a-link;
+  color: $a-link;
   &:hover {
-    color:$primary-color;
+    color: $primary-color;
   }
   &.post-link {
-    display:block;
-    margin-bottom:16px;
+    display: block;
+    margin-bottom: 16px;
     &:hover {
-      background-color:$bg-color;
+      background-color: $bg-color;
     }
   }
 }
-p a ,.content-block li a {
+p a,
+.content-block li a {
   font-weight: 700;
   text-decoration: underline;
   &:hover {
@@ -42,34 +43,34 @@ a.no-underline {
 a:hover {
   text-decoration: none;
 }
-ul, ol {
+ul,
+ol {
   &.no-list-style {
     list-style-type: none;
-    padding-left:0px;
+    padding-left: 0px;
     li {
-      margin:4px 0px;
+      margin: 4px 0px;
     }
   }
   font-family: $sans-reg;
   li {
-    font-size:1.6rem;
+    font-size: 1.6rem;
   }
 }
 
 p {
-  font-size:1.6rem;
+  font-size: 1.6rem;
   font-family: $sans-reg;
-  color:$primary-font;
+  color: $primary-font;
   // margin:1.2rem 0rem;
   &.lead {
-    font-size:2rem;
-    margin-top:0px;
+    font-size: 2rem;
+    margin-top: 0px;
   }
   footer & {
-    color:#fff;
-    font-size:1.4rem;
+    color: #fff;
+    font-size: 1.4rem;
   }
-
 }
 h1,
 h2,
@@ -77,60 +78,78 @@ h3,
 h4,
 h5,
 h6 {
-    color: $primary-color;
-    font-family:$sans-bold;
-    // margin: 1.6rem 0rem 1rem 0rem;
+  color: $primary-color;
+  font-family: $sans-bold;
+  // margin: 1.6rem 0rem 1rem 0rem;
 }
 h2,
 h3,
 h4 {
-  margin-top:1.5rem;
+  margin-top: 1.5rem;
   &.card-title {
-    margin-top:0px;
+    margin-top: 0px;
   }
 }
 table {
-  font-size:1.6rem;
+  font-size: 1.6rem;
   h2 {
-    margin-top:0px;
+    margin-top: 0px;
   }
 }
 .event-date {
-  font-size:1.4rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
-  color:$primary-font;
+  color: $primary-font;
 }
 .h-wrapper {
-  display:inline-block;
+  display: inline-block;
   // @include breakpoint(tablet) {
   //   width:100%;
   // }
-  border-bottom:4px solid $accent;
-  padding-right:24px;
+  border-bottom: 4px solid $accent;
+  padding-right: 24px;
 }
 #breadcrumbs {
-  margin:16px 0;
-  font-size:1.4rem;
-  color:transparentize($primary-color,0.25);
+  margin: 16px 0;
+  font-size: 1.4rem;
+  color: transparentize($primary-color, 0.25);
   a {
-    color:$tertiary-font;
+    color: $tertiary-font;
     &:hover {
-      color:$primary-color;
+      color: $primary-color;
     }
   }
 }
 .caption {
-  color:$secondary-font;
-  font-size:1.4rem;
+  color: $secondary-font;
+  font-size: 1.4rem;
   font-style: italic;
-  margin:4px;
+  margin: 4px;
 }
 blockquote {
-  border-left:4px solid rgba(0,40,85,.12);
-  padding-left:4%;
-  font-size:1.6rem;
-  font-size: italic
+  border-left: 4px solid rgba(0, 40, 85, 0.12);
+  padding-left: 4%;
+  font-size: 1.6rem;
+  font-size: italic;
 }
 .blockquote-footer {
-  font-size:1.6rem;
+  font-size: 1.6rem;
+}
+.sponsor-gold {
+  color: #af8f53;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.sponsor-silver {
+  color: #71706e;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+.sponsor-bronze {
+  font-weight: bold;
+  color: #977547;
+  text-decoration: underline;
+  margin-bottom: 0;
 }
