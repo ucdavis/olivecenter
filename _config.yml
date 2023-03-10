@@ -15,6 +15,8 @@ url: "https://olivecenter.ucdavis.edu" # the base hostname & protocol for your s
 
 break: md
 
+future: true
+
 permalink: pretty
 
 paginate: 3
@@ -28,7 +30,6 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - octopress-autoprefixer
-
 # collections:
 #   contents:
 #     output: true
