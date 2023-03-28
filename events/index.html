@@ -19,11 +19,11 @@ title: Events at the UC Davis Olive Center
         <h2>Active Events</h2>
         <hr />
 
-        <div class="row">
+        <div class="row mb-2">
           {% for post in site.categories.active reversed %}
           <div class="col-md-12">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <img
                   style="max-width: 100%"
                   src="/media/{{ post.imagethumb }}"
@@ -41,6 +41,8 @@ title: Events at the UC Davis Olive Center
                 </p>
                 {% else %}
                 <p class="mt-3 t-center">More info coming soon</p>
+                {% endif %} {% if post.eventinfo %}
+                <p class="discreet">{{ post.eventinfo }}</p>
                 {% endif %}
               </div>
               <div class="pt-0 col-md-8">
