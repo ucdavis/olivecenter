@@ -4,11 +4,10 @@ title: Julia Tinsley
 description: Julia Tinsley is the Senior Corporate Manager of QA and R&D at Bell-Carter Foods, Inc. — a company which produces half of the black-ripe olives in the United States.
 permalink: /ways-to-give/supporter-profiles/julia-tinsley
 supporter-thumb: tinsley-thumb.jpg
+published: false
 tag:
   - supporter
 ---
-
-
 
 <div class="row">
 
