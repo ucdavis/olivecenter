@@ -5,9 +5,6 @@ description: > # this means to ignore newlines until "baseurl:"
   The world-renowned center brings together nearly 60 UC faculty members, research specialists and farm advisors who address the research and education needs of California olive growers and processors. The center also collaborates with institutions worldwide. The center’s co-chairs are Professor Michael McCarthy, Chair of the Department of Food Science and Technology; and Dr. Louise Ferguson, Extension Specialist in the Department of Plant Sciences.
 subject: Olive research at UC Davis
 classification: Web Design
-author:
-designer:
-replyto:
 themecolor: 848B14
 repo: "https://github.com/ucdavis/olivecenter"
 baseurl: "" # the subpath of your site, e.g. /blog/
