@@ -1,17 +1,127 @@
 ---
-layout: iframe
+layout: landing
 ---
-
-<div class="row">
-  <div class="col-{{ site.break }}-8">
-    <table id="spreadsheet" class="table-bordered"></table>
+<div class="container">
+  <!-- <div class="alert alert-primary mt-5 text-center">
+    <h2>Welcome back to school!</h2>
+    <p>10% off back-to-school discount on selected oils and gift packs at UCD Bookstore</p><p><a class="btn-borderonly" target="_blank" href="https://ucdavisstores.com/MerchList.aspx?ID=16472&CatID=3016">Shop now</a></p>
+  </div> -->
+    <div class="alert alert-primary mt-3 text-center">
+    <h2>Sign up for our newsletter and keep up to date with UC Davis Olive Center news and events</h2>
+    <p><p><a class="btn-borderonly" href="/newsletter">Sign up</a></p>
   </div>
-  <div class="col-{{ site.break }}-4">
-    <div id="filters"></div>
-    <div class="filterbox">
-      <h3>Filters</h3>
-      <ul id="filter_elements" class="no-list-style"></ul>
+  <div class="row main-cta">
+    <div class="col event border-col">
+      <div class="row justify-content-between">
+        <div class="col-sm-7 event-left">
+          <div class="h-wrapper">
+            <h1>Campus-Grown Olive Oil</h1>
+          </div>
+          <div class="cta-descrip">
+            <p>
+              Our delicious extra virgin olive oil is harvested with volunteers and funds olive research and education.
+            </p>
+          </div>
+          <p>
+            <a target="_blank" class="btn-borderonly" href="http://ucdavisstores.com/MerchDetail.aspx?MerchID=1466866&num=0&start=&end=&type=2&searchtype=all&txtSearch=olive%20center">Learn more about this product</a>
+          </p>
+          <p>
+            <a target="_blank" class="btn-borderonly" href="http://ucdavisstores.com/MerchList.aspx?ID=16472&CatID=3016">View all Olive Center products</a>
+          </p>
+        </div>
+        <div class="col-sm-4 t-center">
+          <img src="/media/Wolf_250.png" alt="Wolfskill Olive Oil">
+        </div>
+      </div>
     </div>
-    <button id="clearfilters" class="btn btn-info">Clear filters</button>
+    
+    <div class="col-md-6 event">
+      <div class="row justify-content-between">
+        <div class="col-sm-7 event-left">
+          <div class="h-wrapper">
+            <h2>Olio Novello Festival 2023</h2>
+          </div>
+          <div class="cta-descrip">
+            <img style="max-width:100%;" src="/media/events/2023/olionuovo23.png" alt="picture of olives"><p>The UC Davis Olive Center in collaboration with the students in our "Olea Learn Apprenticeship Program", has created the 2023 limited edition Olio Novello from UC Davis Wolfskill Experimental Orchard, Winters.
+            </p>
+          </div>
+          <p>
+            <a class="btn-borderonly" href="/events">Learn more</a>
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <div class="calendar-wrapper">
+            <div class="calendar-top">Nov.</div>
+            <div class="calendar-bot">18th</div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
   </div>
+
+  <div class="row justify-content-between">
+    <div class="col-md-7">
+      <div class="h-wrapper">
+        <h1>Learn Olive</h1>
+      </div>
+      <p></p>
+      <div class="row">
+        <div class="col homepage-ctas">
+          <p>
+            <a class="action-btn bg-golden-lupine" target="_blank" href="https://www2.ipm.ucanr.edu/agriculture/olive/">Pest Management</a>
+          </p>
+        </div>
+        <div class="col homepage-ctas">
+          <p>
+            <a class="action-btn bg-sunny-grass" target="_blank" href="https://coststudies.ucdavis.edu/en/current/">Cost Studies</a>
+          </p>
+        </div>
+        <div class="col homepage-ctas">
+          <p>
+            <a class="action-btn bg-unitrans" target="_blank" href="https://casoilresource.lawr.ucdavis.edu/soilweb-apps/">Soil Surveys</a>
+          </p>
+        </div>
+        <div class="col homepage-ctas">
+          <p>
+            <a class="action-btn bg-recpool" target="_blank" href="https://ucanr.edu/About/Locations/">UC Farm Advisors</a>
+          </p>
+        </div>
+        <div class="col homepage-ctas">
+          <p>
+            <a class="action-btn bg-winegrape" href="/resources">UC Resources</a>
+          </p>
+        </div>
+        <div class="col homepage-ctas">
+          <p>
+            <a class="action-btn bg-california-poppy" href="/media/files/myths1933.pdf">Myths & Facts</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="h-wrapper">
+        <h1>Social</h1>
+      </div>
+      <p>
+        <div class="fb-page" data-href="https://www.facebook.com/UCDavis.OliveCenter" data-hide-cover="false" data-tabs="timeline" data-hide-cover="false" data-show-facepile="false" data-height="500" data-width="500" data-adapt-container-width="true">
+          <blockquote cite="https://www.facebook.com/UCDavis.OliveCenter" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/UCDavis.OliveCenter">UC Davis Olive Center</a></blockquote>
+        </div>
+      </p>
+
+    </div>
+  </div>
+
 </div>
+
+<div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
